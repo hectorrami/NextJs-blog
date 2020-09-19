@@ -1,9 +1,9 @@
-import Head from 'next/head';
-import Layout, { siteTitle } from '../components/layout';
-import utilStyles from '../styles/utils.module.css';
-import { getSortedPostsData } from '../lib/posts';
-import Link from 'next/link';
-import Date from '../components/date';
+import Head from "next/head";
+import Layout, { siteTitle } from "../components/layout";
+import utilStyles from "../styles/utils.module.css";
+import { getSortedPostsData } from "../lib/posts";
+import Link from "next/link";
+import Date from "../components/date";
 
 export default function Home({ allPostsData }) {
   return (
@@ -13,11 +13,19 @@ export default function Home({ allPostsData }) {
       </Head>
       <section className={utilStyles.headingMd}>
         <p>
-          Welcome to my blog, <br /> I'm a Junior Software Developer that
-          studied computer science at the{' '}
-          <a href="https://www.uh.edu/">University of Houston.</a>
-          <br />I made this blog to simply share some of the things I've learned
-          as a developer, and some of the mistakes I've made along the way.
+          University of Houston alumnus working full-time as a backend
+          developer. 🎉
+          <br />
+          <br />
+          I have experience with Java technologies, modern JavaScript
+          frameworks, noSQL and SQL databases, and cloud technologies.
+          <br />
+          <br />
+          Connect with me on{" "}
+          <a href="https://www.linkedin.com/in/hector-ramirez-14ab63185/">
+            LinkedIn
+          </a>{" "}
+          !
         </p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
