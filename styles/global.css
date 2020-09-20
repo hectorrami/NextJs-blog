@@ -8,6 +8,17 @@ body {
   font-size: 18px;
 }
 
+@media only screen and (prefers-color-scheme: dark) {
+  body {
+    background: #282c34;
+  }
+  h1,
+  h2,
+  p {
+    color: white;
+  }
+}
+
 * {
   box-sizing: border-box;
 }
