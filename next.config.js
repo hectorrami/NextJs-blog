@@ -1,4 +1,4 @@
 module.exports = {
-  basePath: "/NextJs-blog",
-  assetPrefix: "/NextJs-blog",
+  basePath: "/NextJs-blog/",
+  assetPrefix: "/NextJs-blog/",
 };
