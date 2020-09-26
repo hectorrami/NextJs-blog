@@ -7,7 +7,7 @@ const name = 'Hector Ramirez';
 export const siteTitle = 'Hector Ramirez Blog';
 
 export default function Layout({ children, home }) {
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_PATH;
   return (
     <div className={styles.container}>
       <Head>
