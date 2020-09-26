@@ -3,12 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "node ./test-migration.js && next dev",
     "build": "next build",
+    "export": "next export",
     "start": "next start"
   },
   "dependencies": {
-    "date-fns": "^2.15.0",
+    "date-fns": "^2.16.1",
     "gray-matter": "^4.0.2",
     "next": "9.3.5",
     "react": "16.13.1",
