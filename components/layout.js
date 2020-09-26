@@ -29,7 +29,7 @@ export default function Layout({ children, home }) {
         {home ? (
           <>
             <img
-              src={baseUrl + 'images/profile.png'}
+              src={baseUrl + '/images/profile.png'}
               className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
               alt={name}
             />
