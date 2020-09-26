@@ -7,7 +7,7 @@ const name = 'Hector Ramirez';
 export const siteTitle = 'Hector Ramirez Blog';
 
 export default function Layout({ children, home }) {
-  const baseUrl = '/NextJs-blog';
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
   return (
     <div className={styles.container}>
       <Head>
