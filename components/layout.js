@@ -7,6 +7,7 @@ const name = 'Hector Ramirez';
 export const siteTitle = 'Hector Ramirez Blog';
 
 export default function Layout({ children, home }) {
+  const baseUrl = '/NextJs-blog';
   return (
     <div className={styles.container}>
       <Head>
@@ -28,7 +29,7 @@ export default function Layout({ children, home }) {
         {home ? (
           <>
             <img
-              src="/images/profile.png"
+              src={baseUrl + 'images/profile.png'}
               className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
               alt={name}
             />
