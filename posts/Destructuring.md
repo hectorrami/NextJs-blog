@@ -1,5 +1,5 @@
 ---
-title: 'Destructuring props in React'
+title: 'Destructuring Props In React'
 date: '2020-10-10'
 ---
 
