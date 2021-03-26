@@ -39,7 +39,7 @@ export default function Layout({ children, home }) {
             <Link href="/NextJs-blog/">
               <a>
                 <img
-                  src={'/images/profile.png'}
+                  src={'/NextJs-blog/images/profile.png'}
                   className={`${styles.headerImage} ${utilStyles.borderCircle}`}
                   alt={name}
                 />
