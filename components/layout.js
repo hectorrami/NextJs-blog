@@ -7,7 +7,6 @@ const name = 'Hector Ramirez';
 export const siteTitle = 'Hector Ramirez Blog';
 
 export default function Layout({ children, home }) {
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_PATH;
   return (
     <div className={styles.container}>
       <Head>
@@ -29,7 +28,7 @@ export default function Layout({ children, home }) {
         {home ? (
           <>
             <img
-              src={baseUrl + '/images/profile.png'}
+              src="/images/profile.png"
               className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
               alt={name}
             />
@@ -40,7 +39,7 @@ export default function Layout({ children, home }) {
             <Link href="/NextJs-blog/">
               <a>
                 <img
-                  src={baseUrl + '/images/profile.png'}
+                  src={'/images/profile.png'}
                   className={`${styles.headerImage} ${utilStyles.borderCircle}`}
                   alt={name}
                 />
@@ -57,7 +56,7 @@ export default function Layout({ children, home }) {
       <main>{children}</main>
       {!home && (
         <div className={styles.backToHome}>
-          <Link href="/NextJs-blog/">
+          <Link href="/">
             <a>← Back to home</a>
           </Link>
         </div>

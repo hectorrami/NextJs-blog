@@ -13,19 +13,19 @@ export default function Home({ allPostsData }) {
       </Head>
       <section className={utilStyles.headingMd}>
         <p>
-          University of Houston alumnus working full-time as a backend
-          developer. 🎉
+          University of Houston alumnus working full-time as a Software
+          Developer. 🎉
           <br />
           <br />
-          I have experience with Java technologies, modern JavaScript
-          frameworks, noSQL and SQL databases, and cloud technologies.
+          I have experience with Java technologies, modern JavaScript frameworks
+          and libraries, noSQL and SQL databases, and cloud technologies.
           <br />
           <br />
           Connect with me on{' '}
           <a href="https://www.linkedin.com/in/hector-ramirez-14ab63185/">
             LinkedIn
           </a>{' '}
-          !
+          or <a href="https://github.com/hectorrami">Github</a>!
         </p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
@@ -33,10 +33,7 @@ export default function Home({ allPostsData }) {
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>
-              <Link
-                href="/NextJs-blog/posts/[id]"
-                as={`/NextJs-blog/posts/${id}`}
-              >
+              <Link href="/posts/[id]" as={`/posts/${id}`}>
                 <a>{title}</a>
               </Link>
               <br />
