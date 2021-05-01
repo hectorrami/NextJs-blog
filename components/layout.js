@@ -28,7 +28,7 @@ export default function Layout({ children, home }) {
         {home ? (
           <>
             <img
-              src="/images/profile.png"
+              src="/NextJs-blog/images/profile.png"
               className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
               alt={name}
             />
@@ -36,17 +36,17 @@ export default function Layout({ children, home }) {
           </>
         ) : (
           <>
-            <Link href="">
+            <Link href="/NextJs-blog">
               <a>
                 <img
-                  src={'/images/profile.png'}
+                  src={'/NextJs-blog/images/profile.png'}
                   className={`${styles.headerImage} ${utilStyles.borderCircle}`}
                   alt={name}
                 />
               </a>
             </Link>
             <h2 className={utilStyles.headingLg}>
-              <Link href="">
+              <Link href="NextJs-blog">
                 <a className={utilStyles.colorInherit}>{name}</a>
               </Link>
             </h2>
@@ -56,7 +56,7 @@ export default function Layout({ children, home }) {
       <main>{children}</main>
       {!home && (
         <div className={styles.backToHome}>
-          <Link href="/">
+          <Link href="/NextJs-blog">
             <a>← Back to home</a>
           </Link>
         </div>
