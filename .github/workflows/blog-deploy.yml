@@ -25,7 +25,9 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - run: npm ci
       - run: npm run build
+        env: NEXT_PUBLIC_BASE_PATH: /NextJs-blog
       - run: npm run export
+        env: NEXT_PUBLIC_BASE_PATH: /NextJs-blog
       - run: touch ./out/.nojekyll
 
       - name: Deploy 🚀
